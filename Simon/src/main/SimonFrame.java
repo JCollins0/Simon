@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -44,7 +45,8 @@ public class SimonFrame extends JFrame {
 		setJMenuBar(bar);
 		bar.add(menu);
 		menu.add(highscores);
-		menu.add(difficulty);
+		bar.add(new JLabel("       Difficulty: "));
+		bar.add(difficulty);
 		menu.add(info);
 		menu.addSeparator();
 		menu.add(exit);

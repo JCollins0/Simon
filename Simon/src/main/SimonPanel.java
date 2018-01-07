@@ -185,6 +185,7 @@ public class SimonPanel extends Canvas implements Runnable {
 		level = difficulty;
 		loadCircles();
 		reset();
+		gameOver = false;
 		gameNotStartedYet = true;
 	}
 
